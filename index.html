@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuttle Bus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <label for="text">Starting point:</label>
+        <input type="text" name="origin-text" id="origin-text">
+    </div>
+
+    <div id="map"></div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5e6W2TTvBUXhQUU1EDDwRB8SYv7Pya4E&callback=initMap&v=weekly&libraries=places"
+        defer></script> 
+        <!-- this calls back the init function  -->
+        <!-- libraries=places is added to the script  -->
+
+</body>
+
+</html>
